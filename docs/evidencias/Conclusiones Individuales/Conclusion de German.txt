@@ -1,0 +1,4 @@
+Conclusion - German:
+Como conclusion de esta práctica, manejar y procesar una base de datos con un gran volumen de datos, y que a demás se generaron muchos registros en un periodo muy corto de tiempo, con diferentes tipos de datos, es muy complicado en una laptop normal o en un entorno comun como visual studio, o incluso google colab, que nos limitan el uso de la memoria RAM. Ante estas limitaciones, y el impacto de nuevos registros cada segundo, para su posterior analsisis, se vuelve una obligación recurrir a métodos de manejo de Big Data, donde en nuestro procesamiento, se logren visualizar las 5Vs, obteniendo sobre todo un valor ante esos datos. 
+
+Con esta practica logramos ver que manejar datos masivos es tedioso si no tenemos como tal los recursos para procesarlos.

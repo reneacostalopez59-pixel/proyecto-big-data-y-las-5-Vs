@@ -1,0 +1,2 @@
+Al terminar esta práctica entendí mejor cómo se comporta la información cuando se generan muchos registros en poco tiempo. Lo que más me ayudó fue poder observarlo directamente durante el ejercicio y no solamente verlo de manera teórica en clase.
+También me quedó más claro para qué sirven las 5V y cómo se pueden identificar dentro de un caso real. Considero que esta actividad fue útil porque me permitió comprender mejor el tema de Big Data y darme cuenta de la importancia que tiene analizar correctamente la información para poder aprovecharla.
