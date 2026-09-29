@@ -17,7 +17,7 @@ Para este caso de estudio, identificamos las siguientes características:
 ---
 
 ## Instrucciones de Instalación
-Para que el proyecto pueda ejecutarse en otro equipo siguiendo únicamente las instrucciones de este repositorio, realiza los siguientes pasos[cite: 2]:
+Para que el proyecto pueda ejecutarse en otro equipo siguiendo únicamente las instrucciones de este repositorio, realiza los siguientes pasos:
 
 1.  **Clonar el repositorio:**
     ```bash
@@ -26,34 +26,34 @@ Para que el proyecto pueda ejecutarse en otro equipo siguiendo únicamente las i
     ```
 
 2.  **Instalar las dependencias:**
-    Ejecuta el siguiente comando para instalar las librerías necesarias (`pandas`, `numpy`, `pyarrow`)[cite: 3, 4]:
+    Ejecuta el siguiente comando para instalar las librerías necesarias (`pandas`, `numpy`, `pyarrow`):
     ```bash
     pip install -r requirements.txt
     ```
 
 3.  **Obtener el Dataset:**
-    Por restricciones de almacenamiento, el dataset no se sube a GitHub[cite: 3]. 
+    Por restricciones de almacenamiento, el dataset no se sube a GitHub. 
     * Descarga el archivo original `yellow_tripdata_2026-07.parquet`.
-    * Colócalo exactamente dentro de la carpeta `data/` del proyecto sin cambiarle el nombre[cite: 3].
+    * Colócalo exactamente dentro de la carpeta `data/` del proyecto sin cambiarle el nombre.
 
 ---
 
-## 4. Instrucciones de Ejecución
-Con el entorno preparado y el dataset ubicado en la carpeta `data/`[cite: 3], ejecuta el programa de análisis desde la raíz del proyecto usando el siguiente comando en tu terminal[cite: 2]:
+## Instrucciones de Ejecución
+Con el entorno preparado y el dataset ubicado en la carpeta `data/`, ejecuta el programa de análisis desde la raíz del proyecto usando el siguiente comando en tu terminal:
 
 ```bash
 python src/main.py
-
+```
 ---
 
-## 5. Explicación de los Resultados
-Al ejecutar el script de Python, el código lee el archivo `.parquet` y devuelve exitosamente la siguiente información básica requerida sobre el conjunto de datos[cite: 1, 4]:
+## Explicación de los Resultados
+Al ejecutar el script de Python, el código lee el archivo `.parquet` y devuelve exitosamente la siguiente información básica requerida sobre el conjunto de datos:
 
-*   **Cantidad de registros:** El script utiliza la función `.shape[0]` para calcular y mostrar el número total de filas, lo que representa la cantidad exacta de viajes realizados en ese mes[cite: 4].
-*   **Cantidad de columnas:** Utilizando `.shape[1]`, se expone el total de campos disponibles por viaje (usualmente 19 columnas para este dataset)[cite: 4].
-*   **Tamaño aproximado del dataset:** El código utiliza la librería `os` para calcular el tamaño real del archivo en el disco y lo convierte dinámicamente para imprimir su peso en Megabytes (MB)[cite: 4].
+*   **Cantidad de registros:** El script utiliza la función `.shape[0]` para calcular y mostrar el número total de filas, lo que representa la cantidad exacta de viajes realizados en ese mes.
+*   **Cantidad de columnas:** Utilizando `.shape[1]`, se expone el total de campos disponibles por viaje (usualmente 19 columnas para este dataset).
+*   **Tamaño aproximado del dataset:** El código utiliza la librería `os` para calcular el tamaño real del archivo en el disco y lo convierte dinámicamente para imprimir su peso en Megabytes (MB).
 *   **Tipos de datos:** A través de `.dtypes`, el sistema identifica si las columnas son de tipo entero (`int64` para pasajeros), decimal (`float64` para montos y distancias) o temporales (`datetime64` para las horas de los viajes)[cite: 4].
-*   **Valores faltantes:** Mediante `.isna().sum()`, el programa realiza un conteo por columna para identificar dónde existen datos nulos o perdidos que requieran limpieza posterior[cite: 4].
-*   **Variables disponibles:** Finalmente, un ciclo itera sobre `.columns` para listar todos los nombres de las variables del dataset (como tarifa total, distancia, zonas, etc.)[cite: 4].
+*   **Valores faltantes:** Mediante `.isna().sum()`, el programa realiza un conteo por columna para identificar dónde existen datos nulos o perdidos que requieran limpieza posterior.
+*   **Variables disponibles:** Finalmente, un ciclo itera sobre `.columns` para listar todos los nombres de las variables del dataset (como tarifa total, distancia, zonas, etc.).
 
-*(Las capturas de pantalla de la terminal que demuestran la ejecución exitosa de estos resultados se encuentran guardadas en la carpeta `docs/evidencias/`)*[cite: 2, 3].
+*(Las capturas de pantalla de la terminal que demuestran la ejecución exitosa de estos resultados se encuentran guardadas en la carpeta `docs/evidencias/`)*.
